@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react';
-/* import { a } from 'react-router-dom'; */
+import Image from "next/image";
 import Menu from "@components/Menu";
 import MyOrder from "@containers/MyOrder";
 import MenuMobile from "@components/MenuMobile";
@@ -34,10 +34,10 @@ const Header = () => {
 	return (
 		<nav className={styles.navegador}>
 			<figure className={styles['menu-container']}>
-				<img src={menu} alt="menu" onClick={() => setMenuMobile(!toggleMenu)} className={styles.menu} />
+				<Image src={menu} alt="menu" onClick={() => setMenuMobile(!toggleMenu)} className={styles.menu} />
 			</figure>
 			<div className={styles["navbar-left"]}>
-				<img src={logo} alt="logo" className={styles["nav-logo"]} />
+				<Image src={logo} alt="logo" className={styles["nav-logo"]} />
 				<ul>
 					<li>
 						<a to="/login">All</a>
@@ -63,7 +63,7 @@ const Header = () => {
 				<ul>
 					<li className={styles["navbar-email"]} onClick={() => setToggle(!toggle)}>userName@example.com</li>
 					<li className={styles["navbar-shopping-cart"]} onClick={() => setToggleOrders(!toggleOrders)}>
-						<img src={shoppingCart} alt="shopping cart" />
+						<Image src={shoppingCart} alt="shopping cart" />
 						{verifyCart(state.cart.length)}
 					</li>
 				</ul>

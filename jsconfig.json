@@ -9,7 +9,8 @@
             "@logos/*": ["assets/Platzi_YardSale_Logos/*"],
             "@context/*": ["context/*"],
             "@styles/*": ["styles/*"],
-            "@hooks/*": ["hooks/*"]
+            "@hooks/*": ["hooks/*"],
+            "@templates/*": ["templates/*"]
         }
     }
 }

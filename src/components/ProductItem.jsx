@@ -1,8 +1,9 @@
 import React, {useContext} from 'react';
-import '@styles/ProductItem.scss';
 import AppContext from '@context/AppContext';
+import Image from "next/image";
 import addTo from "@icons/bt_add_to_cart.svg";
 import addEnd from "@icons/bt_added_to_cart.svg"
+import styles from '@styles/ProductItem.module.scss';
 
 const ProductItem = ({producth}) => {
 	const { addToCart, removeFromCart, state } = useContext(AppContext);
@@ -12,15 +13,15 @@ const ProductItem = ({producth}) => {
 	    };
 
 	return (
-		<div className="ProductItem">
-				<img src={producth.images[0]} alt={producth.title} />
-			<div className="product-info">
+		<div className={styles.ProductItem}>
+				<Image loader={() => producth.images[0]} src={producth.images[0]} alt={producth.title} width={240} height={240} />
+			<div className={styles["product-info"]}>
 				<div>
 					<p>${producth.price}</p>
 					<p>{producth.title}</p>
 				</div>
-				<figure onClick={() => handleClick(producth)} className="container-Addto">
-					{state.cart.includes(producth) ? <img src={addEnd} alt="add-to-card" /> : <img src={addTo} alt="add-to-card" />}
+				<figure onClick={() => handleClick(producth)} className={styles["container-Addto"]}>
+					{state.cart.includes(producth) ? <Image src={addEnd} alt="add-to-card" /> : <Image src={addTo} alt="add-to-card" />}
 				</figure>
 			</div>
 		</div>

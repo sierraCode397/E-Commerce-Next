@@ -1,12 +1,12 @@
 /* import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] }) */
-import Header from "@components/Header";
+import ProductList from '@containers/ProductList';
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <ProductList />
     </>
   );
 }
