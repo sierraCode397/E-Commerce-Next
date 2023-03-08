@@ -2,7 +2,13 @@
     "compilerOptions": {
         "baseUrl": "src",
         "paths" :{
-            "@pages": ["pages/"],
+            "@pages/*": ["pages/*"],
+            "@components/*": ["components/*"],
+            "@containers/*": ["containers/*"],
+            "@icons/*": ["assets/Platzi_YardSale_Icons/*"],
+            "@logos/*": ["assets/Platzi_YardSale_Logos/*"],
+            "@context/*": ["context/*"],
+            "@styles/*": ["styles/*"],
         }
     }
 }

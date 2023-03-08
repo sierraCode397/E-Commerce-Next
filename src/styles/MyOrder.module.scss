@@ -1,0 +1,115 @@
+@import 'vars';
+
+.MyOrder {
+	width: 36rem;
+	min-height: 80%;
+	padding: 2.4rem;
+	position: fixed;
+	overflow-y: auto;
+	right: 0;
+	top: 6rem;
+	bottom: 0;
+	border-radius: 0.6rem;
+	background-color: $--white;
+	border: 0.1rem solid $--very-light-pink;
+	animation: swipeLeft 0.26s ease;
+}
+.title-container {
+	display: flex;
+}
+.title-container img {
+	transform: rotate(180deg);
+	margin-right: 1.4rem;
+}
+.title {
+	font-size: $--lg;
+	font-weight: bold;
+	text-decoration: none;
+	color: $--black;
+}
+
+.title:hover {
+	color: $--hospital-green;
+	cursor: pointer;
+}
+
+.arrow{
+	width: 1rem;
+	height: 2rem;
+	cursor: pointer;
+}
+
+.arrow:hover{
+    width: 1.2rem;
+	height: 2.2rem;
+}
+
+.my-order-content{
+	display: flex;
+	flex-direction: column;
+}
+
+.order {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 1.6rem;
+	align-items: center;
+	background-color: $--text-input-field;
+	margin-bottom: 2.4rem;
+	border-radius: 0.8rem;
+	padding: 0 2.4rem;
+}
+.order p:nth-child(1) {
+	display: flex;
+	flex-direction: column;
+}
+.order p span:nth-child(1) {
+	font-size: $--md;
+	font-weight: bold;
+}
+.order p:nth-child(2) {
+	font-size: $--md;
+	text-align: end;
+	font-weight: bold;
+}
+
+.primary-button {
+	background-color: $--hospital-green;
+	border-radius: 0.8rem;
+	border: none;
+	width: 100%;
+	cursor: pointer;
+	font-size: $--md;
+	font-weight: bold;
+	height: 5rem;
+	text-decoration: none;
+	color: $--white;
+}
+
+.primary-button:hover {
+	background-color: rgba(107, 198, 107, 0.7);
+	height: 5.2rem;
+}
+
+@keyframes swipeLeft {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 36rem;
+    }
+}
+
+@media (max-width: 710px) {
+	.MyOrder {
+		width: 100%;
+	}
+	@keyframes swipeLeft {
+		0% {
+			width: 0;
+		}
+		100% {
+			width: 100%;
+		}
+	}
+}
