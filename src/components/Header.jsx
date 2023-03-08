@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react';
-import { Link } from 'react-router-dom';
+/* import { a } from 'react-router-dom'; */
 import Menu from "@components/Menu";
 import MyOrder from "@containers/MyOrder";
 import MenuMobile from "@components/MenuMobile";
@@ -33,36 +33,36 @@ const Header = () => {
 
 	return (
 		<nav className={styles.navegador}>
-			<figure className='menu-container'>
-				<img src={menu} alt="menu" onClick={() => setMenuMobile(!toggleMenu)} className="menu" />
+			<figure className={styles['menu-container']}>
+				<img src={menu} alt="menu" onClick={() => setMenuMobile(!toggleMenu)} className={styles.menu} />
 			</figure>
-			<div className="navbar-left">
-				<img src={logo} alt="logo" className="nav-logo" />
+			<div className={styles["navbar-left"]}>
+				<img src={logo} alt="logo" className={styles["nav-logo"]} />
 				<ul>
 					<li>
-						<Link to="/login">All</Link>
+						<a to="/login">All</a>
 					</li>
 					<li>
-						<Link to="/login">Clothes</Link>
+						<a to="/login">Clothes</a>
 					</li>
 					<li>
-						<Link to="/login">Electronics</Link>
+						<a to="/login">Electronics</a>
 					</li>
 					<li>
-						<Link to="/login">Furnitures</Link>
+						<a to="/login">Furnitures</a>
 					</li>
 					<li>
-						<Link to="/login">Toys</Link>
+						<a to="/login">Toys</a>
 					</li>
 					<li>
 						<a href="/">Others</a>
 					</li>
 				</ul>
 			</div>
-			<div className="navbar-right">
+			<div className={styles["navbar-right"]}>
 				<ul>
-					<li className="navbar-email" onClick={() => setToggle(!toggle)}>userName@example.com</li>
-					<li className="navbar-shopping-cart" onClick={() => setToggleOrders(!toggleOrders)}>
+					<li className={styles["navbar-email"]} onClick={() => setToggle(!toggle)}>userName@example.com</li>
+					<li className={styles["navbar-shopping-cart"]} onClick={() => setToggleOrders(!toggleOrders)}>
 						<img src={shoppingCart} alt="shopping cart" />
 						{verifyCart(state.cart.length)}
 					</li>

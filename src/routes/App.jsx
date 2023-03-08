@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <AppContext.Provider value={initialState}>
-      <HashRouter>
+      <HashRouter basename='e-commerce'>
         <Layout>
           <Routes>
             <Route path="/" element={<Login />} />
