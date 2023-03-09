@@ -41,12 +41,6 @@
 	display: inline-block;
 }
 
-.navbar-email:hover {
-    cursor: pointer;
-	font-weight: bold;
-    color: $--very-light-pink;
-}
-
 @media (max-width: 740px) {
 	.Menu {
 		display: none;

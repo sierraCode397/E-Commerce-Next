@@ -36,7 +36,7 @@ const Header = () => {
 		<nav className={styles.navegador}>
 			<figure className={styles['menu-container']}>
 				<Link href="/">
-					<Image src={menu} alt="menu" onClick={() => setMenuMobile(!toggleMenu)} className={styles.menu} />
+					<Image src={menu} alt="menu" onClick={() => setMenuMobile(!toggleMenu)} className={styles["menu-navegador"]} />
 				</Link>
 			</figure>
 			<div className={styles["navbar-left"]}>
@@ -46,19 +46,19 @@ const Header = () => {
 						<Link href="/">All</Link>
 					</li>
 					<li>
-						<a to="/login">Clothes</a>
+						<Link href="/">Clothes</Link>
 					</li>
 					<li>
-						<a to="/login">Electronics</a>
+						<Link href="/">Electronics</Link>
 					</li>
 					<li>
-						<a to="/login">Furnitures</a>
+						<Link href="/">Furnitures</Link>
 					</li>
 					<li>
-						<a to="/login">Toys</a>
+						<Link href="/">Toys</Link>
 					</li>
 					<li>
-						<a href="/">Others</a>
+						<Link href="/">Others</Link>
 					</li>
 				</ul>
 			</div>

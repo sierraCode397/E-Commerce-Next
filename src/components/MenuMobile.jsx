@@ -1,5 +1,5 @@
 import React, {useContext, useState} from "react";
-/* import { Link } from "react-router-dom"; */
+import Link from "next/link";
 import AppContext from "@context/AppContext";
 import styles from "@styles/MenuMobile.module.scss";
 
@@ -8,47 +8,47 @@ const MenuMobile = () => {
 
   return (
 
-    <nav className={styles.mobile-menu}>
+    <nav className={styles["mobile-menu"]}>
 
             <ul>
-                <li className="title-menu-mobile">
-                    <Link to="/login" className="title-menu">CATEGORIES</Link>
+                <li className={styles["title-menu-mobile"]}>
+                    <Link href="/" className={styles["title-menu"]}>CATEGORIES</Link>
                 </li>
                 <li>
-                    <Link to="/login" onClick={() => setMenuMobile(!toggleMenu)}>All</Link>
+                    <Link href="/" onClick={() => setMenuMobile(!toggleMenu)}>All</Link>
                 </li>
                 <li>
-                    <Link to="/login" onClick={() => setMenuMobile(!toggleMenu)}>Cameras</Link>
+                    <Link href="/" onClick={() => setMenuMobile(!toggleMenu)}>Cameras</Link>
                 </li>
                 <li>
-                    <Link to="/login" onClick={() => setMenuMobile(!toggleMenu)}>Sistems</Link>
+                    <Link href="/" onClick={() => setMenuMobile(!toggleMenu)}>Sistems</Link>
                 </li>
                 <li>
-                    <Link to="/login" onClick={() => setMenuMobile(!toggleMenu)}>Alarmas</Link>
+                    <Link href="/" onClick={() => setMenuMobile(!toggleMenu)}>Alarmas</Link>
                 </li>
                 <li>
-                    <Link to="/login" onClick={() => setMenuMobile(!toggleMenu)}>Electronics</Link>
+                    <Link href="/" onClick={() => setMenuMobile(!toggleMenu)}>Electronics</Link>
                 </li>
                 <li>
-                    <a href="/" onClick={() => setMenuMobile(!toggleMenu)}>Others</a>
+                    <Link href="/" onClick={() => setMenuMobile(!toggleMenu)}>Others</Link>
                 </li>
             </ul>
 
             <ul>
                 <li>
-                    <Link to="/orders">My orders</Link>
+                    <Link href="/orders">My orders</Link>
                 </li>
                 <li >
-                    <Link to="/account" onClick={() => setMenuMobile(!toggleMenu)}>My account</Link>
+                    <Link href="/account" onClick={() => setMenuMobile(!toggleMenu)}>My account</Link>
                 </li>
             </ul>
 
             <ul>
                 <li>
-                    <Link to="/login" className="email" onClick={() => setMenuMobile(!toggleMenu)}>izaack107@gmail.com</Link>
+                    <Link href="/" className={styles["email-mobile-menu"]} onClick={() => setMenuMobile(!toggleMenu)}>izaack107@gmail.com</Link>
                 </li>
                 <li>
-                    <Link to="/" className="sing-out" onClick={() => setMenuMobile(!toggleMenu)}>Sing out</Link>
+                    <Link href="/login" className={styles["sing-out"]} onClick={() => setMenuMobile(!toggleMenu)}>Sing out</Link>
                 </li>
             </ul>
 
