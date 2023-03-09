@@ -9,9 +9,9 @@ const Checkout = () => {
 	return (
 		<div className= {styles.Checkout}>
 			<div className={styles["Checkout-container"]}>
-				<h1 className={styles.title}>My order checkout</h1>
+				<h1 className={styles["title-checkout"]}>My order checkout</h1>
 				<div className={styles["Checkout-content"]}>
-					<div className={styles.order}>
+					<div className={styles["order-checkout"]}>
 						<p>
 							<span>{formattedDate}</span>
 							<span>{state.cart.length} Articulos</span>

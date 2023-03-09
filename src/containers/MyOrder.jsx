@@ -1,5 +1,6 @@
 import React, { useContext, useState} from 'react';
-/* import { Link } from "react-router-dom"; */
+import Image from "next/image";
+import Link from "next/link";
 import OrderItem from '@components/OrderItem';
 import AppContext from "@context/AppContext";
 import arrow from "@icons/flechita.svg";
@@ -21,21 +22,21 @@ const MyOrder = () => {
 		return (
 			<aside className={styles.MyOrder}>
 				<div className={styles["title-container"]}>		
-						<img src= {arrow} alt="arrow" onClick={handleMenu} className="arrow" />
-					<Link to="/orders" className="title" onClick={()=> setToggleOrders(!toggleOrders)}>My order</Link>
+						<Image src= {arrow} alt="arrow" onClick={handleMenu} className={styles.arrow} />
+					<Link href="/orders" className={styles["title-myOrder"]} onClick={()=> setToggleOrders(!toggleOrders)}>My order</Link>
 				</div>
-				<div className="my-order-content">
+				<div className={styles["my-order-content"]}>
 					{state.cart.map(product => (
 						<OrderItem product={product} key={`orderItem-${product.id}`}/>
 					))}
-					<div className="order">
+					<div className={styles["my-order"]}>
 						<p>
 							<span>Total</span>
 						</p>
 						<p>${sumTotal()}</p>
 					</div>
-					<Link to="/checkout" onClick={() => setToggleOrders(!toggleOrders)}>
-						<button className="primary-button">
+					<Link href="/checkout" onClick={() => setToggleOrders(!toggleOrders)}>
+						<button className={styles["primary-button-myOrder"]}>
 							Checkout 
 						</button>
 					</Link>

@@ -1,5 +1,6 @@
 import React, {useState, useContext} from 'react';
 import Image from "next/image";
+import Link from "next/link";
 import Menu from "@components/Menu";
 import MyOrder from "@containers/MyOrder";
 import MenuMobile from "@components/MenuMobile";
@@ -34,13 +35,15 @@ const Header = () => {
 	return (
 		<nav className={styles.navegador}>
 			<figure className={styles['menu-container']}>
-				<Image src={menu} alt="menu" onClick={() => setMenuMobile(!toggleMenu)} className={styles.menu} />
+				<Link href="/">
+					<Image src={menu} alt="menu" onClick={() => setMenuMobile(!toggleMenu)} className={styles.menu} />
+				</Link>
 			</figure>
 			<div className={styles["navbar-left"]}>
 				<Image src={logo} alt="logo" className={styles["nav-logo"]} />
 				<ul>
 					<li>
-						<a to="/login">All</a>
+						<Link href="/">All</Link>
 					</li>
 					<li>
 						<a to="/login">Clothes</a>
