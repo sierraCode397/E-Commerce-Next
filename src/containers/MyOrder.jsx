@@ -20,7 +20,7 @@ const MyOrder = () => {
 	if (menu == true) {
 		return (
 			<aside className={styles.MyOrder}>
-				<div className="title-container">		
+				<div className={styles["title-container"]}>		
 						<img src= {arrow} alt="arrow" onClick={handleMenu} className="arrow" />
 					<Link to="/orders" className="title" onClick={()=> setToggleOrders(!toggleOrders)}>My order</Link>
 				</div>
