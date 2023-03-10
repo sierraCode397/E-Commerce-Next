@@ -1,14 +1,14 @@
 import React, {useContext} from 'react';
 import Image from "next/image";
-import AppContext from "@context/AppContext"
+import AppContext from "@context/AppContext";
 import close from "@icons/icon_close.png";
 import styles from "@styles/OrderItem.module.scss";
 
 const OrderItem = ({product}) => {
-	const {removeFromCart} = useContext(AppContext)
+	const {removeFromCart} = useContext(AppContext);
 	const handleRemove = product => {
-		removeFromCart(product)
-	}
+		removeFromCart(product);
+	};
 
 	return (
 		<div className={styles.OrderItem}>
@@ -20,6 +20,6 @@ const OrderItem = ({product}) => {
 			<Image src= {close} alt="close" onClick={() => handleRemove(product)} className="close-item"/>
 		</div>
 	);
-}
+};
 
 export default OrderItem;

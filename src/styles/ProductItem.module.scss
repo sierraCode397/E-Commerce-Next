@@ -44,8 +44,15 @@
 	color: $--very-light-pink;
 }
 
+.container-Addto {
+	background-color: transparent;
+    border: none;
+}
+
 .container-Addto img{
 	cursor: pointer;
+	width: 3.7rem;
+	height: 3.7rem;
 }
 
 .container-Addto img:hover{

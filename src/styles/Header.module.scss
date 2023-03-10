@@ -59,6 +59,8 @@
     color: $--very-light-pink;
     font-size: $--sm;
     margin-right: 1.2rem;
+    background-color: transparent;
+    border: none;
 }
 
 .navbar-email:hover {
@@ -70,6 +72,8 @@
 .navbar-shopping-cart{
     position: relative;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 .navbar-shopping-cart img:hover {

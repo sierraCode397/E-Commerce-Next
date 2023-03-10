@@ -1,16 +1,16 @@
 import React, {useContext} from 'react';
 import OrderItem from '@components/OrderItem';
 import AppContext from "@context/AppContext";
-import '@styles/Orders.scss';
+import styles from '@styles/Orders.module.scss';
 
 const Orders = () => {
-	const {state} = useContext(AppContext)
+	const {state} = useContext(AppContext);
 
 	return (
-		<div className="Orders">
-			<div className="Orders-container">
-				<h1 className="title">My orders</h1>
-				<div className="Orders-content">
+		<div className={styles.Orders}>
+			<div className={styles["Orders-container"]}>
+				<h1 className={styles["title-orders"]}>My orders</h1>
+				<div className={styles["Orders-content"]}>
 					{state.cart.map(product => (
 						<OrderItem product={product} key={`orderItem-${product.id}`}/>
 					))}
@@ -18,6 +18,6 @@ const Orders = () => {
 			</div>
 		</div>
 	);
-}
+};
 
 export default Orders;

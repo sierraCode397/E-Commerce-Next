@@ -7,7 +7,7 @@ import arrow from "@icons/flechita.svg";
 import styles from "@styles/MyOrder.module.scss";
 
 const MyOrder = () => {
-	const {state, sumTotal, toggleOrders, setToggleOrders} = useContext(AppContext)
+	const {state, sumTotal, toggleOrders, setToggleOrders} = useContext(AppContext);
 
 	const [menu, setMenu] = useState(true);
 	const handleMenu = () => {
@@ -45,6 +45,6 @@ const MyOrder = () => {
 			</aside>
 		);
 	}
-}
+};
 
 export default MyOrder;

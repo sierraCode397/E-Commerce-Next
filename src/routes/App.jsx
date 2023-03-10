@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
+import React from 'react';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import Layout from '@containers/Layout';
 import Home from '@pages/Home';
 import Login from '@pages/Login';
@@ -45,6 +45,6 @@ const App = () => {
       </HashRouter>
     </AppContext.Provider>
   );
-}
+};
 
 export default App;

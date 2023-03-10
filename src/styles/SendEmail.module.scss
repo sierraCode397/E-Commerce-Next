@@ -13,18 +13,18 @@
 	width: 300px;
 	justify-items: center;
 }
-.logo {
+.logo-email {
 	width: 150px;
 	margin-bottom: 48px;
 	justify-self: center;
 	display: none;
 }
-.title {
+.title-email {
 	font-size: $--lg;
 	margin-bottom: 12px;
 	text-align: center;
 }
-.subtitle {
+.subtitle-email {
 	color: $--very-light-pink;
 	font-size: $--md;
 	font-weight: 300;
@@ -45,13 +45,13 @@
 .email-image img {
 	width: 80px;
 }
-.resend {
+.resend-email {
 	font-size: $--sm;
 }
-.resend span {
+.resend-email span {
 	color: $--very-light-pink;
 }
-.resend a {
+.resend-email a {
 	color: $--hospital-green;
 	text-decoration: none;
 }
@@ -69,12 +69,12 @@
 .primary-button-email a {
 	color: $--white;
 }
-.login-button {
+.login-button-email {
 	margin-top: 14px;
 	margin-bottom: 30px;
 }
 @media (max-width: 640px) {
-	.logo {
+	.logo-email {
 		display: block;
 	}
 }

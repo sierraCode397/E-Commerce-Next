@@ -4,7 +4,7 @@ import AppContext from "@context/AppContext";
 import styles from "@styles/Menu.module.scss";
 
 const Menu = () => {
-	const { toggle, setToggle } = useContext(AppContext)
+	const { toggle, setToggle } = useContext(AppContext);
 
 	return (
 		<div className={styles.Menu}>
@@ -13,7 +13,7 @@ const Menu = () => {
 					<Link href="/orders" className="title-Menu" onClick={() => setToggle(!toggle)}>My orders</Link>
 				</li>
 				<li>
-					<Link href="/account" onClick={() => setToggle(!toggle)}>My account</Link>
+					<Link href="/myAccount" onClick={() => setToggle(!toggle)}>My account</Link>
 				</li>
 				<li>
 					<Link href="/login" onClick={() => setToggle(!toggle)}>Sign out</Link>
@@ -21,6 +21,6 @@ const Menu = () => {
 			</ul>
 		</div>
 	);
-}
+};
 
 export default Menu;

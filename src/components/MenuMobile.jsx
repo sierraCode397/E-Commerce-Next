@@ -1,10 +1,10 @@
-import React, {useContext, useState} from "react";
+import React, {useContext} from "react";
 import Link from "next/link";
 import AppContext from "@context/AppContext";
 import styles from "@styles/MenuMobile.module.scss";
 
 const MenuMobile = () => {
-    const { setMenuMobile, toggleMenu } = useContext(AppContext)
+    const { setMenuMobile, toggleMenu } = useContext(AppContext);
 
   return (
 
@@ -39,7 +39,7 @@ const MenuMobile = () => {
                     <Link href="/orders">My orders</Link>
                 </li>
                 <li >
-                    <Link href="/account" onClick={() => setMenuMobile(!toggleMenu)}>My account</Link>
+                    <Link href="/myAccount" onClick={() => setMenuMobile(!toggleMenu)}>My account</Link>
                 </li>
             </ul>
 
@@ -54,6 +54,6 @@ const MenuMobile = () => {
 
         </nav>
     );
-}
+};
 
 export default MenuMobile;
