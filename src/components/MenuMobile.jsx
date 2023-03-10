@@ -36,7 +36,7 @@ const MenuMobile = () => {
 
             <ul>
                 <li>
-                    <Link href="/orders">My orders</Link>
+                    <Link href="/orders" onClick={() => setMenuMobile(!toggleMenu)}>My orders</Link>
                 </li>
                 <li >
                     <Link href="/myAccount" onClick={() => setMenuMobile(!toggleMenu)}>My account</Link>

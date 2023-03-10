@@ -14,7 +14,7 @@ const ProductItem = ({ producth }) => {
 
   return (
     <div className={styles.ProductItem}>
-      <Image loader={() => producth.images[0]} src={producth.images[0]} alt={producth.title} width={240} height={240} />
+      <Image className={styles.APImage} loader={() => producth.images[0]} src={producth.images[0]} alt={producth.title} width={240} height={240} />
       <div className={styles['product-info']}>
         <div>
           <p>${producth.price}</p>
@@ -29,7 +29,7 @@ const ProductItem = ({ producth }) => {
             }
           }}
         >
-          {state.cart.includes(producth) ? <Image src={addEnd} alt="add-to-card" /> : <Image src={addTo} alt="add-to-card" />}
+          {state.cart.includes(producth) ? <Image className={styles.addToCartItem} src={addEnd} alt="add-to-card" /> : <Image className={styles.addToCartItem} src={addTo} alt="add-to-card" />}
         </button>
       </div>
     </div>

@@ -49,13 +49,13 @@
     border: none;
 }
 
-.container-Addto img{
+.container-Addto .addToCartItem{
 	cursor: pointer;
 	width: 3.7rem;
 	height: 3.7rem;
 }
 
-.container-Addto img:hover{
+.container-Addto .addToCartItem:hover{
 	width: 3.9rem;
 	height: 3.9rem;
 }
@@ -67,8 +67,13 @@
 	.ProductItem {
 		width: 14rem;
 	}
-	.ProductItem img {
+	.ProductItem .APImage {
 		width: 14rem;
 		height: 14rem;
+	}
+	.container-Addto .addToCartItem{
+		cursor: pointer;
+		width: 3.7rem;
+		height: 3.7rem;
 	}
 }
