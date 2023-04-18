@@ -47,6 +47,7 @@
 }
 .resend-email {
 	font-size: $--sm;
+	margin-top: 4rem;
 }
 .resend-email span {
 	color: $--very-light-pink;
@@ -68,10 +69,6 @@
 }
 .primary-button-email a {
 	color: $--white;
-}
-.login-button-email {
-	margin-top: 14px;
-	margin-bottom: 30px;
 }
 @media (max-width: 640px) {
 	.logo-email {
