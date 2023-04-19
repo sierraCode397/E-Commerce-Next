@@ -45,7 +45,7 @@ const MenuMobile = () => {
 
             <ul>
                 <li>
-                    <Link href="/" className={styles["email-mobile-menu"]} onClick={() => setMenuMobile(!toggleMenu)}>izaack107@gmail.com</Link>
+                    <Link href="/" className={styles["email-mobile-menu"]} onClick={() => setMenuMobile(!toggleMenu)}>Example@gmail.com</Link>
                 </li>
                 <li>
                     <Link href="/login" className={styles["sing-out"]} onClick={() => setMenuMobile(!toggleMenu)}>Sing out</Link>
