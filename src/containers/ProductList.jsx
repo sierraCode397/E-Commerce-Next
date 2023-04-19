@@ -15,6 +15,8 @@ const ProductList = () => {
 						<ProductItem producth={product} key={product.id} />
 					))}
 			</div>
+			<article className={styles.BlockList}>
+			</article>
 		</section>
 	);
 };
