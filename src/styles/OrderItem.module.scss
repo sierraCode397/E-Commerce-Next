@@ -32,6 +32,7 @@
 	color: $--very-light-pink;
 }
 .OrderItem p:nth-child(3) {
+	color: var($--black);
 	font-size: $--md;
 	font-weight: bold;
 }

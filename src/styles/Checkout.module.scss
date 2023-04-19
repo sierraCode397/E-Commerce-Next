@@ -8,6 +8,7 @@
 	place-items: center;
 }
 .title-checkout {
+	color: var($--black);
 	font-size: $--lg;
 	margin-bottom: 40px;
 }
@@ -36,6 +37,7 @@
 	flex-direction: column;
 }
 .order-checkout p span:nth-child(1) {
+	color: var($--black);
 	font-size: $--md;
 	font-weight: bold;
 }
