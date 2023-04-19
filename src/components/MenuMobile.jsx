@@ -18,16 +18,16 @@ const MenuMobile = () => {
                     <Link href="/" onClick={() => setMenuMobile(!toggleMenu)}>All</Link>
                 </li>
                 <li>
-                    <Link href="/" onClick={() => setMenuMobile(!toggleMenu)}>Cameras</Link>
-                </li>
-                <li>
-                    <Link href="/" onClick={() => setMenuMobile(!toggleMenu)}>Sistems</Link>
-                </li>
-                <li>
-                    <Link href="/" onClick={() => setMenuMobile(!toggleMenu)}>Alarmas</Link>
+                    <Link href="/" onClick={() => setMenuMobile(!toggleMenu)}>Clothes</Link>
                 </li>
                 <li>
                     <Link href="/" onClick={() => setMenuMobile(!toggleMenu)}>Electronics</Link>
+                </li>
+                <li>
+                    <Link href="/" onClick={() => setMenuMobile(!toggleMenu)}>Furnitures</Link>
+                </li>
+                <li>
+                    <Link href="/" onClick={() => setMenuMobile(!toggleMenu)}>Toys</Link>
                 </li>
                 <li>
                     <Link href="/" onClick={() => setMenuMobile(!toggleMenu)}>Others</Link>
