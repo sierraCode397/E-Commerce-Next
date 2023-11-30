@@ -1,38 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# **E-Commerce Web App**
+Este proyecto es una página web de E-Commerce construida con React pero migrada a NEXT.js y utiliza tres diferentes hooks: 
+#####  - useState
+##### - useEffect 
+##### - useContext
 
-## Getting Started
+La aplicación consume una API para poder integrar imagenes y sus respectivos datos como el precio y una descripcion . 
 
-First, run the development server:
+Con React Router DOM y sus funciones "Hash Router y Routes" permitio unir diferentes componentes, contenedores y paginas en una misma APP 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+------------
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Utiliza las siguientes dependencias:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- **axios**: Librería para realizar peticiones HTTP a una API.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- **react**: Biblioteca de JavaScript utilizada para construir interfaces de usuario.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- **react-dom**: Biblioteca de JavaScript utilizada para manipular el árbol de elementos del DOM en una aplicación React.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **react-router-dom**: Biblioteca de JavaScript utilizada para la navegación entre páginas en una aplicación React.
 
-## Learn More
+- **eslint (v8.35.0)**: ESLint es una herramienta de linting para JavaScript y JSX. Ayuda a mantener un código consistente y libre de errores potenciales.
 
-To learn more about Next.js, take a look at the following resources:
+- **eslint-config-next (^13.2.3)**: Configuración específica de ESLint para proyectos Next.js. Proporciona reglas predefinidas para asegurar buenas prácticas en el desarrollo con Next.js.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **eslint-config-prettier (^8.7.0)**: Conjunto de configuraciones que hacen posible la integración de ESLint con Prettier, asegurando un formato coherente y agradable para el código.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **eslint-plugin-jsx-a11y (^6.7.1)**: Plugin de ESLint que proporciona reglas para mejorar la accesibilidad de las aplicaciones React que utilizan JSX.
 
-## Deploy on Vercel
+- **eslint-plugin-prettier (^4.2.1)**: Plugin para ESLint que ejecuta Prettier como una regla de ESLint. Asegura que el código cumpla con las reglas de formato definidas por Prettier.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **next (v13.2.3)**: Next.js es un marco de trabajo React que facilita la creación de aplicaciones web escalables y de alto rendimiento.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **next-pwa (^5.6.0)**: Plugin para Next.js que simplifica la creación de aplicaciones web progresivas (PWA), mejorando la experiencia del usuario con funcionalidades como el servicio fuera de línea y la instalación en el hogar.
+
+- **prettier (^2.8.4)**: Prettier es una herramienta de formateo de código que ayuda a mantener un estilo consistente en todo el proyecto.
+
+- **sass (^1.58.3)**: Sass es un preprocesador CSS que facilita la escritura y el mantenimiento de estilos complejos en aplicaciones web.
+
+- **sharp (^0.31.3)**: Sharp es un módulo de Node.js que proporciona funcionalidades de procesamiento de imágenes de alta velocidad y eficiencia.
+
+------------
+
+## Hooks utilizados
+
+- **useState**: Hook utilizado para gestionar el estado de la aplicación y permitir la actualización del DOM en función de los cambios en dicho estado.
+
+- **useEffect**: Hook utilizado para realizar operaciones secundarias, como la recuperación de datos de una API, y actualizar el estado de la aplicación en consecuencia.
+
+- **useContext**: Hook utilizado para acceder a datos globales almacenados en un contexto compartido por todos los componentes de la aplicación.
+
+------------
+
+#### Uso
+- Clona el repositorio en tu máquina local.
+- Instala las dependencias con npm.
+- Configura tu archivo de webpack para que tu servidor local pueda acceder a los diferentes tipos de archivo
+- Ejecuta la aplicación con npm run start.
+- Accede a la aplicación en http://localhost:8080/.
+
+------------
+
+### Créditos
+
+Este proyecto fue desarrollado por [**Isaac Luisjuan**] en [**Tue Apr 2 20:47:14 2023**].
+
