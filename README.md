@@ -55,9 +55,8 @@ Con React Router DOM y sus funciones "Hash Router y Routes" permitio unir difere
 #### Uso
 - Clona el repositorio en tu máquina local.
 - Instala las dependencias con npm.
-- Configura tu archivo de webpack para que tu servidor local pueda acceder a los diferentes tipos de archivo
-- Ejecuta la aplicación con npm run start.
-- Accede a la aplicación en http://localhost:8080/.
+- Ejecuta la aplicación con npm run dev/start.
+- Accede a la aplicación en http://localhost:3000/.
 
 ------------
 
